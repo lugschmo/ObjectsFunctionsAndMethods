@@ -34,6 +34,7 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
@@ -103,6 +104,17 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    mitch = rg.SimpleTurtle()
+    mitch.pen = rg.Pen('PowderBlue', 15)
+
+    mitch.forward(400)
+
+    mitch.begin_fill()
+    mitch.draw_square(30)
+    mitch.end_fill()
+
+
 ########################################################################
 #
 # DONE: 2.
@@ -137,7 +149,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -167,7 +179,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
