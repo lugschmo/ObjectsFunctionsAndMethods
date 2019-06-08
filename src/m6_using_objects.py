@@ -85,8 +85,37 @@ def circle_and_rectangle():
            75.0
            150.0
     """
+
+    window = rg.RoseWindow(500, 500)
+
+    center = rg.Point(250, 250)
+    radius = 100
+    circle = rg.Circle(center, radius)
+    circle.fill_color = 'blue'
+    circle.attach_to(window)
+
+    print(circle.outline_thickness)
+    print(circle.fill_color)
+    print(circle.center)
+    print(center.x)
+    print(center.y)
+
+    point1 = rg.Point(50, 50)
+    point2 = rg.Point(200, 100)
+    rectangle = rg.Rectangle(point1, point2)
+    rectangle.attach_to(window)
+
+    print(rectangle.outline_thickness)
+    print(rectangle.fill_color)
+    print(rectangle.get_center())
+    print(rectangle.get_center().x)
+    print(rectangle.get_center().y)
+
+    window.render()
+    window.close_on_mouse_click()
+
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #   -- ANY objects that meet the criteria are fine.
     # Put a statement in   main   to test this function
     #    (by calling this function).
