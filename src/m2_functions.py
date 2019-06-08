@@ -35,6 +35,7 @@ def main():
 
     turtle1()
     turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
@@ -113,6 +114,22 @@ def turtle4():
     mitch.begin_fill()
     mitch.draw_square(30)
     mitch.end_fill()
+
+
+def turtle5():
+    dave = rg.SimpleTurtle('square')
+    dave.pen = rg.Pen('YellowGreen', 20)
+
+    dave.left(180)
+    dave.forward(200)
+
+    ben = rg.SimpleTurtle('circle')
+    ben.pen = rg.Pen('Snow2',30)
+
+    ben.right(90)
+    ben.forward(200)
+    ben.left(90)
+    ben.forward(200)
 
 
 ########################################################################
@@ -195,7 +212,7 @@ def turtle4():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
